@@ -6,6 +6,7 @@ from models.base_model import BaseModel
 import unittest
 from datetime import datetime
 
+
 class TestBaseInitiation(unittest.TestCase):
     """
     Tests the initiation of the BaseModel class
@@ -71,7 +72,6 @@ class TestBaseNoKwargs(unittest.TestCase):
         self.obj3.name = "string three"
         self.obj3.number = 1216
         self.obj3_obj = self.obj3.to_dict()
-
 
     def test_id_exists(self):
         """
@@ -227,4 +227,3 @@ class TestBaseNoKwargs(unittest.TestCase):
         # Test if returned dictionary from to_dict  and the
         # excpected one are equal
         self.assertDictEqual(self.obj3_dic, self.obj3_obj)
-

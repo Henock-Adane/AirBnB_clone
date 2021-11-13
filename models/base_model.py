@@ -71,5 +71,4 @@ class BaseModel:
             else:
                 obj_dict[key] = value
 
-
         return obj_dict
