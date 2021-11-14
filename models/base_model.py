@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """
-This class Defines a Model class that will be the base for all the
+This is a Model class that will be the base for all the
 classes to be created in the airbnb module. This class
-will define all common attributes and methods for other classes.
-
+will define all the basic things (attributes and functions)
+that will be used through out the project by other class
+as well
 """
 
 from uuid import uuid4
