@@ -38,7 +38,7 @@ class BaseModel:
     def __init__(self, *args, **kwargs):
         """
         Initlizes the public attributes of the instance after creation
-        
+
          Args:
             *args (any): Unused.
             **kwargs (dict): Key/value pairs of attributes.
@@ -46,7 +46,6 @@ class BaseModel:
         """
 
         FORMAT = "%Y-%m-%dT%H:%M:%S.%f"
-        
         self.id = str(uuid4())
         self.created_at = datetime.today()
         self.updated_at = self.created_at
